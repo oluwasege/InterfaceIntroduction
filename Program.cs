@@ -6,7 +6,16 @@ namespace InterfaceIntroduction
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IVehicle myCar = new Car();
+            myCar.Brand("Ford");
+            myCar.SeatingCapacity(4);
+            myCar.ModeOfTransport();
+            myCar.Speed();
+            IVehicle myboat = new Boat();
+            myboat.Brand("Grand Dutchess");
+            myboat.SeatingCapacity(14);
+            myboat.ModeOfTransport();
+            myboat.Speed();
         }
     }
 }
